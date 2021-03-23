@@ -15,7 +15,6 @@ public class DetailInfoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DetailInfoApplication.class, args);
-//		RestTemplate rt= new RestTemplate();
-//		WebClient.builder();
+
 	}
 }

@@ -14,7 +14,7 @@ public class TeamDao {
 		List<Team> li =new ArrayList<Team>();
 		li.add(new Team(1,"CSK","Srini"));
 		li.add(new Team(2,"MI","Ambani"));
-		li.add(new Team(1,"RCB","ABC"));
+		li.add(new Team(3,"RCB","ABC"));
 		return li;
 	}
 }

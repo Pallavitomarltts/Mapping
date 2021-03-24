@@ -19,13 +19,11 @@ public class DetailController {
      RestTemplate rt;
 	@Autowired
     RestTemplate pt;
-	
-	
-     
+
      @RequestMapping("/teamdetail")
      public List<Team> getExternalTeam(){
 
-    	 ResponseEntity<Team[]> response = rt.getForEntity("http://localhost:8080/teams", Team[].class);
+    	 ResponseEntity<Team[]> response = rt.getForEntity("http://team-service/teams", Team[].class);
     	 Team[] teams =response.getBody();
     	 List<Team> lt = Arrays.asList(teams);
     	 return lt;
